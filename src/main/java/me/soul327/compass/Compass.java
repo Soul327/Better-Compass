@@ -1,13 +1,9 @@
 package me.soul327.compass;
 
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
-import org.bukkit.entity.SpectralArrow;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
@@ -69,9 +65,6 @@ public final class Compass extends JavaPlugin implements Listener {
     public void onPlayerQuit(PlayerQuitEvent event) {
         // Called when a player leaves a server
         Player player = event.getPlayer();
-        String quitMessage = event.getQuitMessage();
-
-        Bukkit.broadcastMessage(quitMessage);
         players.remove( player );
     }
 
