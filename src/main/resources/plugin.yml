@@ -1,0 +1,4 @@
+name: Compass
+version: '${project.version}'
+main: me.soul327.compass.Compass
+api-version: 1.19
